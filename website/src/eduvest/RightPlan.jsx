@@ -29,12 +29,16 @@ export const RightPlan = () => {
                     </div>
 
                     {/* contact */}
-                    <div className="contact-section margin-top">
+                    {/* <div className="contact-section margin-top">
                         <img src="images/contact.png" alt="contact-img" />
-                    </div>
+                    </div> */}
+
+                    {/*  */}
+                    {/*  */}
 
                 </div>
             </section>
         </>
+       
     )
 }

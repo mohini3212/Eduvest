@@ -16,7 +16,7 @@ export const EducationInfo = () => {
                                 <h4>A college degree that costs ₹25 lakhs today could cost nearly <span>₹1 crore in just 15 years.</span></h4>
                                 <h6>How much will it really cost to put your child through college?</h6>
                                 <button
-                                    className="btn5"
+                                    className="btn1"
                                     onMouseEnter={() => setHover(true)}
                                     onMouseLeave={() => setHover(false)}
                                 >

@@ -1,3 +1,4 @@
+import { Contact } from "./Contact"
 import { Education } from "./Education"
 import { EducationInfo } from "./EducationInfo"
 import { Helping } from "./Helping"
@@ -14,6 +15,7 @@ export const EduvestPg = () => {
             <Education />
             <EducationInfo />
             <RightPlan />
+            <Contact/>
         </>
     )
 }

@@ -58,7 +58,7 @@ export const Education = () => {
                                     </div>
                                     <p>up to</p>
                                     <h4>{rate} <span>p.a.</span></h4>
-                                    <button className="btn6">Book Now <FaArrowRight /></button>
+                                    <button className="btn2">Book Now <FaArrowRight /></button>
                                 </div>
                             )
 

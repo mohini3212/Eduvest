@@ -2,39 +2,35 @@ import { easeInOut, motion } from "motion/react";
 export const Footer = () => {
     const quick = [
         {
-            "links": "Interactive Journey"
+            "links": "Privacy Policy"
         },
         {
-            "links": "Planning Tools"
+            "links": "Cookies Notice"
         },
         {
-            "links": "Learning Resources"
+            "links": "Security"
         },
         {
-            "links": "Success Stories"
+            "links": "Terms & Conditions"
         },
-        {
-            "links": "Book Consultation"
-        },
+
 
     ]
 
     const resources = [
         {
-            "links": "Education Cost Calculator"
+            "links": "What we Do"
         },
         {
-            "links": "Investment Guides"
+            "links": "About Us"
         },
         {
-            "links": "FAQ & Help Center"
+            "links": "Why Join Us"
         },
         {
-            "links": "Download Mobile App"
+            "links": "Contact Us"
         },
-        {
-            "links": "Expert Consultations"
-        },
+
 
 
     ]
@@ -55,37 +51,33 @@ export const Footer = () => {
     return (
         <>
             {/* =================FOOTER SECTION  ================= */}
-            <footer className="margin-top">
-                <div className="container">
+            <footer className="container">
+                <div className="footer">
+                    <div className="grid grid-two-cols footer-links">
+                        <div>
+                            <div className="footer-content">
+                                {/* eduvest logo*/}
+                                <div >
+                                    <div className="footer-text">
+                                        <img src="images/logo3.png" alt="footer-logo" />
+                                        <img src="images/logo-name.png" alt="logo-name" />
+                                    </div>
 
-                    <div className="grid grid-four-cols">
-                        <div className="footer-content">
-                            {/* eduvest logo*/}
-                            <div className="footer-info">
-                                <div className="footer-text">
-                                    <img src="/images/logo.png" alt="footer-logo" />
-                                    <h2>Eduvest</h2>
-                                </div>
-                                <p>Empowering parents to secure their children's educational dreams through smart financial planning and story-driven guidance.</p>
-                                <div className="m-4 ms-0 me-0">
-                                    <div className="footer-icon">
-                                        <img src="/images/footer-icon1.png" alt="footer-icon" />
-                                        <h6>+91 9876543210</h6>
-                                    </div>
-                                    <div className="footer-icon">
-                                        <img src="/images/footer-icon2.png" alt="footer-icon" />
-                                        <h6>hello@eduvest.com</h6>
-                                    </div>
-                                    <div className="footer-icon">
-                                        <img src="/images/footer-icon3.png" alt="footer-icon" />
-                                        <h6>Mumbai, Maharashtra, India</h6>
+                                    <div className="">
+                                        <div className="footer-icon">
+                                            <img src="images/footer-icon1.png" alt="icon-img" />
+                                            <img src="images/footer-icon2.png" alt="icon-img" />
+                                            <img src="images/footer-icon3.png" alt="icon-img" />
+                                            <img src="images/footer-icon4.png" alt="icon-img" />
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         {/* Quick Links */}
-                        <div className="footer-info">
+                        <div className="footer-info ">
+                        <div >
                             <h5>Quick Links</h5>
                             <motion.ul
                                 variants={listVariants}
@@ -104,7 +96,7 @@ export const Footer = () => {
                         {/*  */}
 
                         {/* Resources */}
-                        <div className="footer-info">
+                        <div >
                             <h5>Resources</h5>
                             <motion.ul
                                 variants={listVariants}
@@ -124,27 +116,27 @@ export const Footer = () => {
 
 
                         {/*Stay Updated */}
-                        <div className="footer-info">
-                            <h5>Stay Updated</h5>
-                            <p>Get tips for your child's financial future delivered to your inbox</p>
-                            <div className="input-box">
-                                <input type="text" placeholder="Enter your Email" />
-                                <button className="btn4"><img src="/images/Vector.png" alt="arrow-icon" /></button>
+                        <div >
+                            <h5>Contact</h5>
+                            <div >
+                                <div className="contact-info mb-4">
+                                    <img src="images/footer-icon5.png" alt="icon-img" />
+                                    <h6>hello@eduvest.in</h6>
+                                </div>
+                                <div className="contact-info">
+                                    <img src="images/footer-icon6.png" alt="icon-img" />
+                                    <h6> #7 - 5707 Sidley <br />
+                                        St. Burnaby , BC</h6>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                 {/*copy right  */}
-                <div className="custom-border margin-top">
-                    <div className="container">
-                        <div className="footer-bottom grid-two-colscontainer">
-                            <p>© 2024 Eduvest. All rights reserved. | Made with ❤️ for Indian families</p>
-                            <ul>
-                                <li><a href="">Privacy Policy</a></li>
-                                <li><a href="">Terms of Service</a></li>
-                                <li><a href="">Cookie Policy</a></li>
-                                <li><a href="">Disclaimer</a></li>
-                            </ul>
+</div>
+                    {/*copy right  */}
+                    <div className="custom-border">
+                        <div className="">
+                            <p>© 2025 EduVest</p>
                         </div>
                     </div>
                 </div>

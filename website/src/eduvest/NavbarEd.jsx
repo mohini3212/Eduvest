@@ -24,7 +24,7 @@ export const NavbarEd = () => {
                                 <li><a href="#contact">Contact Us</a></li>
                                 {/* <button className="btn1">Login</button> */}
                                 <button
-                                    className="btn5"
+                                    className="btn1"
                                     onMouseEnter={() => setHover(true)}
                                     onMouseLeave={() => setHover(false)}
                                 >

@@ -17,7 +17,7 @@ export const Helping = () => {
                             <p>₹5L insured by RBI's subsidiary DICGC</p>
                         </div>
                         <button
-                            className="btn5"
+                            className="btn1"
                             onMouseEnter={() => setHover(true)}
                             onMouseLeave={() => setHover(false)}
                         >
