@@ -1,4 +1,5 @@
 import { easeInOut, motion } from "motion/react";
+
 export const Footer = () => {
     const quick = [
         {
@@ -58,17 +59,19 @@ export const Footer = () => {
                             <div className="footer-content">
                                 {/* eduvest logo*/}
                                 <div >
+
                                     <div className="footer-text">
-                                        <img src="images/logo3.png" alt="footer-logo" />
-                                        <img src="images/logo-name.png" alt="logo-name" />
+                                        <img src="images/logo3.svg" alt="footer-logo" />
+                                        <img src="images/logo-name.svg" alt="logo-name" />
                                     </div>
+
 
                                     <div className="">
                                         <div className="footer-icon">
-                                            <img src="images/footer-icon1.png" alt="icon-img" />
-                                            <img src="images/footer-icon2.png" alt="icon-img" />
-                                            <img src="images/footer-icon3.png" alt="icon-img" />
-                                            <img src="images/footer-icon4.png" alt="icon-img" />
+                                            <img src="images/footer-icon1.svg" alt="icon-img" />
+                                            <img src="images/footer-icon2.svg" alt="icon-img" />
+                                            <img src="images/footer-icon3.svg" alt="icon-img" />
+                                            <img src="images/footer-icon4.svg" alt="icon-img" />
                                         </div>
 
                                     </div>
@@ -77,62 +80,62 @@ export const Footer = () => {
                         </div>
                         {/* Quick Links */}
                         <div className="footer-info ">
-                        <div >
-                            <h5>Quick Links</h5>
-                            <motion.ul
-                                variants={listVariants}
-                                initial="hidden"
-                                whileInView="visible"
-                                transition={{ staggerChildren: 0.15, ease: easeInOut }}
-                                viewport={{ once: false, amount: 0.2 }}
-                            >
-                                {quick.map((curElem, index) => (
-                                    <motion.li key={index} variants={itemVariants}>
-                                        {curElem.links}
-                                    </motion.li>
-                                ))}
-                            </motion.ul>
-                        </div>
-                        {/*  */}
-
-                        {/* Resources */}
-                        <div >
-                            <h5>Resources</h5>
-                            <motion.ul
-                                variants={listVariants}
-                                initial="hidden"
-                                whileInView="visible"
-                                transition={{ staggerChildren: 0.17, ease: easeInOut }}
-                                viewport={{ once: false, amount: 0.2 }}>
-                                {resources.map((curElem, index) => {
-                                    const { links } = curElem;
-                                    return <motion.li key={index} variants={itemVariants}>
-                                        {links}
-                                    </motion.li>
-                                })}
-                            </motion.ul>
-
-                        </div>
-
-
-                        {/*Stay Updated */}
-                        <div >
-                            <h5>Contact</h5>
                             <div >
-                                <div className="contact-info mb-4">
-                                    <img src="images/footer-icon5.png" alt="icon-img" />
-                                    <h6>hello@eduvest.in</h6>
-                                </div>
-                                <div className="contact-info">
-                                    <img src="images/footer-icon6.png" alt="icon-img" />
-                                    <h6> #7 - 5707 Sidley <br />
-                                        St. Burnaby , BC</h6>
+                                <h5>Quick Links</h5>
+                                <motion.ul
+                                    variants={listVariants}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    transition={{ staggerChildren: 0.15, ease: easeInOut }}
+                                    viewport={{ once: false, amount: 0.2 }}
+                                >
+                                    {quick.map((curElem, index) => (
+                                        <motion.li key={index} variants={itemVariants}>
+                                            {curElem.links}
+                                        </motion.li>
+                                    ))}
+                                </motion.ul>
+                            </div>
+                            {/*  */}
 
+                            {/* Resources */}
+                            <div >
+                                <h5>Resources</h5>
+                                <motion.ul
+                                    variants={listVariants}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    transition={{ staggerChildren: 0.17, ease: easeInOut }}
+                                    viewport={{ once: false, amount: 0.2 }}>
+                                    {resources.map((curElem, index) => {
+                                        const { links } = curElem;
+                                        return <motion.li key={index} variants={itemVariants}>
+                                            {links}
+                                        </motion.li>
+                                    })}
+                                </motion.ul>
+
+                            </div>
+
+
+                            {/*Stay Updated */}
+                            <div >
+                                <h5>Contact</h5>
+                                <div >
+                                    <div className="contact-info mb-4">
+                                        <img src="images/footer-icon5.svg" alt="icon-img" />
+                                        <h6>hello@eduvest.in</h6>
+                                    </div>
+                                    <div className="contact-info">
+                                        <img src="images/footer-icon6.svg" alt="icon-img" />
+                                        <h6> #7 - 5707 Sidley <br />
+                                            St. Burnaby , BC</h6>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-</div>
                     {/*copy right  */}
                     <div className="custom-border">
                         <div className="">

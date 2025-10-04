@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
   padding: 0;
@@ -8,18 +9,18 @@
 
 :root {
   --primary-color: #EAEEF2;
-  --button-color: #FE7F00;
+  --button-color: #047AE5;
   --button1-color: #38495C;
   --text-color: #020817;
-  --heading-color: #030C68;
+  --heading-color: #232C36 ;
   --border-radius: 2.4rem;
   --footer-bg-color: #111827;
   --navbar-color: #5E6163;
-
   --primary-font: "Poppins", sans-serif;
- 
-}
+  --secondary-font:"Playfair Display', serif";
 
+}
+/* #232C36 */
 html {
   font-size: 62.5%;
 }
@@ -45,7 +46,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000;
+color: var(--heading-color);
+  /* font-family: var(--secondary-font); */
 
 }
 
@@ -60,8 +62,8 @@ h2 {
 
 h3 {
   font-size: 3.2rem;
-  font-weight: 700;
-  }
+  font-weight: 600;
+}
 
 h4 {
   font-size: 2.4rem;
@@ -69,7 +71,8 @@ h4 {
 }
 
 p {
-  color: #4B5563;
+  /* color: #4B5563; */
+   color: #64748B;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.4rem;
@@ -90,16 +93,17 @@ ul {
 
 
 .btn1 {
-  background-color: #047AE5;
+  background-color: var(--button-color);
   font-family: var(--tertiary-font);
   border: none;
   padding: 0.8rem 1.6rem;
   color: #fff;
   border-radius: var(--border-radius);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.4rem;
   transition: all 3s ease-in-out;
   transition: transform 0.3s ease-in-out;
+  
 }
 
 .btn1:hover {
@@ -111,13 +115,45 @@ ul {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #232C36;
-  
-  & svg {
+  color: #232C36;
+  font-size: 1.4rem;
+  transition: transform  0.3s ease-in-out;
+  & svg
+ 
+{
+    /* color: #ACAFB3; */
+     color: #232C36;
+    font-weight: 200;
+    font-size: 1.2rem;
     margin-left: 0.6rem;
-     }
-
-   & svg:hover {
-        background-color: transparent;
-  }
+    transition: transform 0.3s ease-in-out;
+  
 }
 
+  & svg:hover {
+    
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+}
+
+
+.btn3 {
+  background-color: #FCFDFD;
+  font-family: var(--tertiary-font);
+  margin-left: 1.5rem;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--border-radius);
+  font-weight: 400;
+  font-size: 1.4rem;
+  transition: all 3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn3:hover {
+  transform: scale(1.05);
+}

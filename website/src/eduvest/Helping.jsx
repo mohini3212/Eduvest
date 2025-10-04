@@ -12,17 +12,27 @@ export const Helping = () => {
                         <h6>Funding dreams, the smart way</h6>
                         <h3>Helping young parents plan their Child’s Future</h3>
                         <div className="booking">
-                            <p>Helping young parents plan their Child’s Future</p>
-                            <img src="images/star2.png" alt="star-img" />
+                            <p>Enjoy 100% digital booking experience</p>
+                            <img src="images/star-img.svg" alt="star-img" />
                             <p>₹5L insured by RBI's subsidiary DICGC</p>
                         </div>
-                        <button
-                            className="btn1"
-                            onMouseEnter={() => setHover(true)}
-                            onMouseLeave={() => setHover(false)}
-                        >
-                            {hover ? "Button" : "Get Started"}
-                        </button>
+                        <div>
+                            <button
+                                className="btn1"
+                                onMouseEnter={() => setHover(true)}
+                                onMouseLeave={() => setHover(false)}
+                            >
+                                {hover ? "Button" : "Get Started"}
+                            </button>
+                            <button
+                                className="btn3"
+                                onMouseEnter={() => setHover(true)}
+                                onMouseLeave={() => setHover(false)}
+                            >
+                                {hover ? "Button" : "Book Workshop"}
+                            </button>
+                        </div>
+
 
                     </div>
                 </div>

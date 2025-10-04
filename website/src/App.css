@@ -7,7 +7,12 @@
 
 .grid-two-cols {
     grid-template-columns: repeat(2, 1fr);
-    gap: 7rem;
+    gap: 3rem;
+}
+
+.grid-three-cols {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
 }
 
 .grid-four-cols {
@@ -112,38 +117,55 @@ nav ul li:hover::after {
 /**** HERO SECTION START ****/
 .helping-section {
     width: 100%;
-    height: 50rem;
-    position: relative;
+       position: relative;
     margin-top: 12rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
 }
 
 .helping-section img {
-    border-radius: 1.2rem;
     width: 100%;
     height: 100%;
+    display: block;
+    border-radius: var(--border-radius);
+   
+}
 
+.helping-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.2rem;
+    background: linear-gradient(to right, #E9C393 0%, #E9C393cc 20%, transparent 50%);
+    z-index: 0;
 }
 
 .helping-content {
     position: absolute;
-    top: 45%;
+    top: 50%;
     color: #fff;
     z-index: 1;
     font-size: 4rem;
     font-weight: 600;
     padding: 0rem 0rem 1.3rem 5rem;
     letter-spacing: 1px;
-    width: 50%;
+    width: 46%;
 
 
     & h3 {
-               color: #01052C;
+        font-family: "Playfair Display", serif;
+        color: #01052C;
         font-style: italic;
+        font-weight: 700;
     }
 
     & h6 {
         font-size: 1.6rem;
         font-weight: 400;
+        color: #2E3947;
     }
 
 }
@@ -153,17 +175,20 @@ nav ul li:hover::after {
     align-items: center;
     justify-content: center;
     background-color: #FFF2E6;
-    border-radius: var(--border-radius);
+    border-radius: 3.2rem;
     border: 1px solid #FFC48A;
-    padding: 0.5rem 1rem;
-    margin-top: 1.5rem;
-    height: 5vh;
+    padding: 0.2rem 0.2rem;
+    margin-top: 1.2rem;
+    height: 4vh;
     overflow: hidden;
 
     & p {
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin-bottom: 0;
         margin-right: 0.6rem;
+        color: #232C36;
+        font-weight: 600;
+
     }
 
     & img {
@@ -175,12 +200,59 @@ nav ul li:hover::after {
 
 /**** HERO SECTION END ****/
 
+/**** POWERFUL SECTION START ****/
+.powerful {
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1.95px 1.6px;
+    border-radius: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.powerful-info {
+
+    & svg {
+        font-size: 6rem;
+        padding: 1.5rem;
+        margin: 2rem 0rem;
+        color: #314C96;
+        background-color: #EAEDF4;
+        border-radius: 1.2rem;
+
+    }
+
+    & h6 {
+
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    & p {
+        font-size: 1.5rem;
+        color: #64748B;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        font-weight: 300;
+    }
+}
+
+.powerful:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transform: translateY(-6px) scale(1.02);
+    background: #ffffff;
+}
+
+/**** POWERFUL SECTION END ****/
+
 /**** PLAN SECTION START ****/
 .education-plan {
-       padding: 2rem;
+    padding: 2rem;
     border: 1px solid #dcdcdc71;
     border-radius: 1.2rem;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
     & p,
     span {
@@ -202,7 +274,7 @@ nav ul li:hover::after {
             font-size: 1.6rem;
             font-weight: 500;
             margin: 0;
-            color: #232C36;
+
         }
 
         & p {
@@ -214,7 +286,7 @@ nav ul li:hover::after {
     & h4 {
         font-weight: 600;
         margin: 0;
-        color: #232C36;
+
     }
 }
 
@@ -222,79 +294,21 @@ nav ul li:hover::after {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
     border: 1px solid #329bfd;
     background-color: #98c1e8a4;
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
 }
 
-.right-plan {
-   
-    padding: 4rem 3rem;
-    border: 1px solid #dcdcdc71;
-    border-radius: 1.2rem;
-
-    & p {
-        font-size: 1.8rem;
-        color: #232C36;
-        font-weight: 400;
-
-    }
-
-    & h6 {
-        font-size: 1.2rem;
-        font-weight: 400;
-        color: #546881;
-    }
-}
-
-/**** PLAN SECTION ENDS ****/
+/**** PLAN SECTION ENDS****/
 
 /**** CHILD EDUCATION SECTION START ****/
-.heading-section {
-       display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 3rem;
-
-    & h3 {
-        font-weight: 600;
-        color: #000000;
-    }
-
-    & img {
-        width: 3rem;
-    }
-}
-
-.heading-section .slider svg:first-child {
-    border: 1px solid #B1B9C5;
-    color: #B1B9C5;
-    padding: 0.4rem;
-    width: 2.8rem;
-    height: 2.8rem;
-    border-radius: 50%;
-    margin-right: 1.5rem;
-    text-align: center;
-
-}
-
-.heading-section .slider svg:nth-child(2) {
-    border: 1px solid #B1B9C5;
-    color: #B1B9C5;
-    padding: 0.4rem;
-    width: 2.8rem;
-    height: 2.8rem;
-    border-radius: 50%;
-    text-align: center;
-
-}
-
-svg:hover {
-    background-color: var(--heading-color);
-}
-
 .education-info {
     background-color: #F5F7F9;
     border-radius: 1.2rem;
     padding: 6rem 5rem;
-     place-items: center;
+    place-items: center;
 
     & h3 {
         font-weight: 500;
@@ -316,7 +330,6 @@ svg:hover {
             font-size: 1.8rem;
             font-weight: 400;
             padding: 2rem 0rem;
-            color: #000000;
         }
 
         & p {
@@ -331,83 +344,139 @@ svg:hover {
     }
 }
 
+/**** CHILD EDUCATION SECTION START ****/
+
+
+
+/**** SLIDER START ****/
+.heading-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+
+    & h3 {
+        font-weight: 600;
+    }
+
+    & img {
+        width: 3rem;
+    }
+}
+
+.heading-section .slider svg:first-child {
+    border: 1px solid #B1B9C5;
+    color: #B1B9C5;
+    padding: 0.4rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    text-align: center;
+
+    &:hover {
+        background-color: #030C68;
+    }
+}
+
+.heading-section .slider svg:nth-child(2) {
+    border: 1px solid #B1B9C5;
+    color: #B1B9C5;
+    padding: 0.4rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    text-align: center;
+
+    &:hover {
+        background-color: #030C68;
+    }
+}
+
+
+/**** SLIDER ENDS ****/
+
+/**** WORKS SECTION START ****/
+.header {
+    text-align: center;
+    margin-top: 1.5rem;
+
+    & p {
+        font-size: 1.6rem;
+        color: #4B5563;
+        font-weight: 300;
+        margin-bottom: 3rem;
+    }
+}
+
+.work-info {
+    padding: 2rem;
+    border: 1px solid #dcdcdc71;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1.95px 1.6px;
+}
+
+.works {
+    text-align: center;
+
+    & img {
+        background-color: var(--button-color);
+        border-radius: 50%;
+        padding: 1.5rem;
+        margin: 2rem 0rem;
+
+    }
+
+    & h6 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    & p {
+        font-size: 1.5rem;
+        color: #64748B;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        font-weight: 300;
+    }
+}
+
+.work-info:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transform: translateY(-6px) scale(1.02);
+    background: #ffffff;
+}
+
+/**** WORKS ENDS ****/
+
 /**** CONTACT SECTION START ****/
 
 .contact-section {
     position: relative;
-    background: #E6F2FC;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    margin-top: 6rem;
-}
+    width: 100%;
+    height: 20rem;
 
-.contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    position: relative;
-    z-index: 2;
-    margin: auto;
 
     & img {
-        height: 30rem;
-
+        width: 100%;
+        height: 100%;
+        border-radius: 1.2rem;
     }
 }
 
 .contact-content {
+    position: absolute;
+    bottom: 20%;
+    left: 8%;
+
 
     & h3 {
-        font-weight: 600;
-        font-size: 2.9rem;
+        font-size: 2.5rem;
+
     }
-
-    & p {
-        margin: 1.5rem 0;
-        font-size: 1.8rem;
-        font-weight: 400;
-        color: #232C36;
-    }
-
-}
-
-
-
-
-.contact-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-
-.star {
-    position: absolute;
-    width: 3.3rem;
-    height: 3.6rem;
-}
-
-.star-1 {
-    top: 13%;
-    left: 7%;
-}
-
-.star-2 {
-    bottom: 21%;
-    left: 3%;
-}
-
-.star-3 {
-    top: 25%;
-    right: 5%;
-}
-
-.star-4 {
-    bottom: 20%;
-    right: 10%;
 }
 
 /**** CONTACT SECTION ENDS ****/
@@ -491,7 +560,7 @@ svg:hover {
             & img:nth-of-type(2) {
                 margin: 0;
                 width: 100%;
-            
+
                 margin-left: 2rem;
             }
         }
@@ -587,8 +656,76 @@ svg:hover {
         justify-content: space-between;
     }
 }
+
 /**** FOOTER SECTION ENDS ****/
 
+/********************** CALCULATOR PAGE *******************/
+
+/**** CALCULATOR SECTION START ****/
+.calculator-section {
+    margin-top: 12rem;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    color: #05055D;
+    cursor: pointer;
+
+}
+
+.searching-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0rem;
+
+    & h2 {
+        font-size: 3.9rem;
+        color: #05055D;
+    }
+
+    & input {
+        border-radius: var(--border-radius);
+        padding: 1rem 3.5rem;
+        width: 30rem;
+        border: 1px solid #64748b93;
+
+        &::placeholder {
+            color: #585892;
+        }
+    }
+
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F6FF;
+    padding: 3rem 2rem;
+    border-radius: 1.2rem;
+
+    & img {
+        margin-right: 2rem;
+    }
+
+    & p {
+        font-size: 1.4rem;
+        color: #585892;
+        line-height: 2rem;
+        letter-spacing: 0.1rem;
+    }
+
+    & h5 {
+        color: #05055D;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+}
 
 /********  media query  ******/
 @media (width <=1400px) {
@@ -602,7 +739,21 @@ svg:hover {
     }
 
     .booking {
-        padding: 0rem 1rem;
+
+        height: 4vh;
+
+        & p {
+            font-size: 1rem;
+            margin-right: 0.6rem;
+
+
+        }
+
+        & img {
+            width: 1.8rem;
+            height: 1.7rem;
+            margin-right: 0.6rem;
+        }
     }
 }
 
@@ -613,14 +764,11 @@ svg:hover {
     }
 
     .booking {
-        padding: 0rem 0.8rem;
-
-        & img {
-            height: 1.5rem;
-        }
+        width: 55rem;
+        height: 3.5vh;
 
         & p {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
     }
 }
@@ -639,6 +787,11 @@ svg:hover {
         display: inline-block;
         cursor: pointer;
         text-align: end;
+
+    }
+
+    .ham-menu :hover {
+        background-color: transparent;
     }
 
     .menu-mobile {
@@ -677,34 +830,38 @@ svg:hover {
         gap: 5rem 3rem;
     }
 
-    
+
 
 
 }
 
 @media (width <=992px) {
-    .helping-content {
-        top: 42%;
-        letter-spacing: 0.5px;
-    }
- .grid-two-cols {
+
+        .grid-two-cols {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
+
+    .grid-three-cols {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+
+    .helping-content{
+        top: 45%;
+    }
     .booking {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+                height: 3.2vh;
+        width: 52rem;
 
         & img {
-            height: 1.1rem;
-            width: 1.4rem;
+            height: 1.6rem;
+            width: 1.6rem;
         }
 
         & p {
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
+            font-size: 0.9rem;
+                    }
     }
 }
 
@@ -721,22 +878,35 @@ svg:hover {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
-    
-        .star-section {
+
+    .grid-three-cols {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .star-section {
         margin-top: 5rem;
     }
 
     .helping-section {
         margin-top: 20rem;
+        & img{
+            width: 100%;
+        }
     }
 
     .helping-content {
-        top: 41%;
+        top: 38%;
         letter-spacing: 0.4px;
+
+        & h3{
+            font-size: 2.7rem;
+        }
     }
 
     .booking {
-        height: 4vh;
+        height: 3.2vh;
+        width: 42rem;
 
         & img {
             height: 1.1rem;
@@ -744,13 +914,38 @@ svg:hover {
         }
 
         & p {
-            font-size: 0.6rem;
-            font-weight: 500;
+            font-size: 0.8rem;
+            
         }
     }
 
-}
+    .calculator {
+        display: flex;
 
+
+        & img {
+            width: 10rem;
+        }
+
+        & p {
+            font-size: 1.8rem;
+        }
+
+        & h5 {
+            font-size: 2rem;
+        }
+    }
+}
+/* @media (width <=767px){
+ .helping-content {
+        top: 38%;
+        letter-spacing: 0.4px;
+
+        & h3{
+            font-size: 2.7rem;
+        }
+    }
+} */
 @media (width <=576px) {
     html {
         font-size: 31.25%;
@@ -760,14 +955,20 @@ svg:hover {
         height: 100%;
     }
 
+    .grid-two-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-three-cols {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
     .grid-four-cols {
         grid-template-columns: 1fr;
 
     }
 
-    .grid-two-cols {
-        grid-template-columns: 1fr;
-    }
 
     .container {
         width: 90%;
@@ -779,6 +980,11 @@ svg:hover {
         padding: 3rem 5rem;
     }
 
+    .helping-content {
+        margin: 4rem 0rem;
+        top: 30%;
+    }
+
     .hero-section {
         margin-top: 0rem;
     }
@@ -787,8 +993,41 @@ svg:hover {
         margin-top: 0rem;
     }
 
+    .booking {
+        width: 36rem;
+        height: 2.7rem;
+    }
+
     .booking p {
         font-size: 0.6rem;
+    }
+
+    .calculator {
+        display: flex;
+
+
+        & img {
+            width: 10rem;
+        }
+
+        & p {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+
+        & h5 {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+@media (width <=500px){
+.helping-content {
+               top: 21%;
+
+    }
+    .helping-content h3{
+font-size: 3rem;
     }
 }
 
@@ -807,11 +1046,12 @@ svg:hover {
 
     .helping-content {
         margin: 4rem 0rem;
-        top: 40%;
-    }
+      top: 25%;
 
+    }
     .booking {
-        height: 3vh;
+        height: 2.1vh;
+        width: 36rem;
 
         & img {
             height: 1.1rem;
@@ -819,8 +1059,27 @@ svg:hover {
         }
 
         & p {
-            font-size: 0.5rem;
-            font-weight: 500;
+            font-size: 0.6rem;
+            font-weight: 600;
+        }
+    }
+
+    .calculator {
+        display: flex;
+        align-items: center;
+
+        & img {
+            width: 10rem;
+        }
+
+        & p {
+            font-size: 2.5rem;
+            line-height: 2.7rem;
+        }
+
+        & h5 {
+            font-size: 2.9rem;
+            margin-bottom: 1rem;
         }
     }
 }
@@ -828,6 +1087,39 @@ svg:hover {
 @media (width <=397px) {
     .helping-content {
         margin: 4rem 0rem;
-        top: 31%;
+        top: 20%;
+
+        & h3 {
+            font-size: 2.8rem;
+        }
+    }
+
+    .contact-content {
+        bottom: 10%;
+    }
+
+    .contact-content h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (width <=362px) {
+    html {
+        font-size: 20.25%;
+    }
+
+    .helping-content {
+       
+        top: 28%;
+    }
+
+    .booking {
+        width: 39rem;
+        height: 1.7vh;
+
+        & p {
+            font-size: 0.6rem;
+            font-weight: 600;
+        }
     }
 }

@@ -5,25 +5,25 @@ import { IoIosArrowForward } from "react-icons/io";
 export const Education = () => {
     const educationPlan = [
         {
-            img: "/images/utkarsh1.png",
+            img: "/images/utkarsh1.svg",
             name: "Utkarsh SF Bank",
             details: "30+ Lakh Cutomers",
             rate: "8.15 % ",
         },
         {
-            img: "/images/utkarsh2.png",
+            img: "/images/utkarsh2.svg",
             name: "Utkarsh SF Bank",
             details: "30+ Lakh Cutomers",
             rate: "8.15 % ",
         },
         {
-            img: "/images/utkarsh3.png",
+            img: "/images/utkarsh3.svg",
             name: "Utkarsh SF Bank",
             details: "Instant Withdrawals",
             rate: "8.25 % ",
         },
         {
-            img: "/images/utkarsh4.png",
+            img: "/images/utkarsh4.svg",
             name: "Utkarsh SF Bank",
             details: "30+ Lakh Cutomers",
             rate: "7.15 % ",
