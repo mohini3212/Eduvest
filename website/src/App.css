@@ -117,7 +117,7 @@ nav ul li:hover::after {
 /**** HERO SECTION START ****/
 .helping-section {
     width: 100%;
-       position: relative;
+    position: relative;
     margin-top: 12rem;
     border-radius: 1.2rem;
     overflow: hidden;
@@ -128,7 +128,7 @@ nav ul li:hover::after {
     height: 100%;
     display: block;
     border-radius: var(--border-radius);
-   
+
 }
 
 .helping-section::after {
@@ -178,7 +178,7 @@ nav ul li:hover::after {
     border-radius: 3.2rem;
     border: 1px solid #FFC48A;
     padding: 0.2rem 0.2rem;
-    margin-top: 1.2rem;
+    margin-top: 2rem;
     height: 4vh;
     overflow: hidden;
 
@@ -195,6 +195,10 @@ nav ul li:hover::after {
         width: 1.8rem;
         height: 1.8rem;
         margin-right: 0.6rem;
+    }
+    & .button{
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -213,11 +217,12 @@ nav ul li:hover::after {
 .powerful-info {
 
     & svg {
+
+        color: #314C96;
+        background-color: #EAEDF4;
         font-size: 6rem;
         padding: 1.5rem;
         margin: 2rem 0rem;
-        color: #314C96;
-        background-color: #EAEDF4;
         border-radius: 1.2rem;
 
     }
@@ -252,6 +257,12 @@ nav ul li:hover::after {
     border: 1px solid #dcdcdc71;
     border-radius: 1.2rem;
     cursor: pointer;
+    width: 30rem;
+    height: 20rem;
+    margin-right: 3.1rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+    overflow: hidden;
     transition: all 0.3s ease-in-out;
 
     & p,
@@ -308,15 +319,21 @@ nav ul li:hover::after {
     background-color: #F5F7F9;
     border-radius: 1.2rem;
     padding: 6rem 5rem;
-    place-items: center;
+    /* place-items: center; */
+    overflow: hidden;
 
     & h3 {
         font-weight: 500;
         color: #046FD0;
+
+        & img {
+            width: 5rem;
+        }
     }
 
     & .education-text {
         margin-top: 2rem;
+
 
         & h4 {
             font-weight: 400;
@@ -339,8 +356,11 @@ nav ul li:hover::after {
         }
     }
 
-    .graph img {
+    .graph {
+        place-items: center;
         width: 50rem;
+        height: 280px;
+        margin: 0 auto;
     }
 }
 
@@ -364,7 +384,7 @@ nav ul li:hover::after {
     }
 }
 
-.heading-section .slider svg:first-child {
+.heading-section .slider p svg:first-child {
     border: 1px solid #B1B9C5;
     color: #B1B9C5;
     padding: 0.4rem;
@@ -379,7 +399,7 @@ nav ul li:hover::after {
     }
 }
 
-.heading-section .slider svg:nth-child(2) {
+.heading-section .slider p svg:nth-child(2) {
     border: 1px solid #B1B9C5;
     color: #B1B9C5;
     padding: 0.4rem;
@@ -398,13 +418,13 @@ nav ul li:hover::after {
 
 /**** WORKS SECTION START ****/
 .header {
-    text-align: center;
-    margin-top: 1.5rem;
+
 
     & p {
         font-size: 1.6rem;
         color: #4B5563;
         font-weight: 300;
+        margin-top: 1.2rem;
         margin-bottom: 3rem;
     }
 }
@@ -421,12 +441,15 @@ nav ul li:hover::after {
 .works {
     text-align: center;
 
-    & img {
+    & svg {
         background-color: var(--button-color);
         border-radius: 50%;
-        padding: 1.5rem;
+        padding: 1.2rem;
         margin: 2rem 0rem;
-
+        color: #fff;
+        /* font-size: 4.9rem; */
+        width: 5rem;
+        height: 5rem;
     }
 
     & h6 {
@@ -464,18 +487,25 @@ nav ul li:hover::after {
         width: 100%;
         height: 100%;
         border-radius: 1.2rem;
+        object-fit: cover;
+        /* object-position: ri; */
+        object-position: right;
     }
 }
 
 .contact-content {
     position: absolute;
     bottom: 20%;
-    left: 8%;
+    left: 6%;
 
 
-    & h3 {
-        font-size: 2.5rem;
+    & h4 {
+        font-size: 2.2rem;
 
+    }
+
+    & p {
+        font-size: 1.3rem;
     }
 }
 
@@ -598,7 +628,7 @@ nav ul li:hover::after {
         margin-bottom: 1.4rem;
         text-align: left;
         font-weight: 600;
-        color: var(--button-color);
+        color: orange;
     }
 
     & li {
@@ -689,8 +719,8 @@ nav ul li:hover::after {
 
     & input {
         border-radius: var(--border-radius);
-        padding: 1rem 3.5rem;
-        width: 30rem;
+        padding: 0.9rem 3rem;
+        width: 23rem;
         border: 1px solid #64748b93;
 
         &::placeholder {
@@ -701,25 +731,34 @@ nav ul li:hover::after {
 }
 
 .calculator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F5F6FF;
-    padding: 3rem 2rem;
+    background-color: #fcf4ec9c;
+    padding: 2rem;
     border-radius: 1.2rem;
+}
 
-    & img {
-        margin-right: 2rem;
+.calculator-info {
+    text-align: left;
+
+    & svg {
+        margin-bottom: 2rem;
+        color: white;
+        background: linear-gradient(135deg, #f89966a8, #fd6769);
+        font-size: 5rem;
+        padding: 1.2rem;
+        border-radius: 1.2rem;
+
     }
+
 
     & p {
         font-size: 1.4rem;
-        color: #585892;
+        /* color: #585892; */
         line-height: 2rem;
         letter-spacing: 0.1rem;
     }
 
     & h5 {
+        /* color: #05055D; */
         color: #05055D;
         font-size: 1.6rem;
         font-weight: 600;
@@ -755,6 +794,17 @@ nav ul li:hover::after {
             margin-right: 0.6rem;
         }
     }
+
+    .contact-content {
+        & h4 {
+            font-size: 2rem;
+
+        }
+
+        & p {
+            font-size: 1.2rem;
+        }
+    }
 }
 
 @media (width <=1220px) {
@@ -771,12 +821,29 @@ nav ul li:hover::after {
             font-size: 1rem;
         }
     }
+
+    .education-info h3 {
+        font-size: 3rem;
+    }
+
+    .contact-content {
+        & h4 {
+            font-size: 1.9rem;
+
+        }
+
+        & p {
+            font-size: 1.2rem;
+        }
+    }
+
 }
 
 
 @media (width <=998px) {
+
     html {
-        font-size: 43.5%;
+        font-size: 50%;
     }
 
     .menu-web {
@@ -827,7 +894,7 @@ nav ul li:hover::after {
 
     .grid-four-cols {
         grid-template-columns: repeat(2, 1fr);
-        gap: 5rem 3rem;
+        gap: 5rem 4rem;
     }
 
 
@@ -837,22 +904,29 @@ nav ul li:hover::after {
 
 @media (width <=992px) {
 
-        .grid-two-cols {
+    .grid-two-cols {
         grid-template-columns: 1fr;
-        gap: 4rem;
+
     }
 
     .grid-three-cols {
         grid-template-columns: repeat(2, 1fr);
-        gap: 4rem;
+
     }
 
-    .helping-content{
-        top: 45%;
+    .helping-content {
+        top: 38%;
+        width: 49%;
+
+        & h3 {
+            font-size: 3.2rem;
+            font-weight: 600;
+        }
     }
+
     .booking {
-                height: 3.2vh;
-        width: 52rem;
+        height: 3.2vh;
+        width: 49rem;
 
         & img {
             height: 1.6rem;
@@ -861,13 +935,29 @@ nav ul li:hover::after {
 
         & p {
             font-size: 0.9rem;
-                    }
+        }
+    }
+
+    .contact-content {
+        & h4 {
+            font-size: 2.9rem;
+
+        }
+
+        & p {
+            font-size: 2rem;
+        }
+    }
+
+    .education-info .graph {
+        width: 100%;
+
     }
 }
 
 @media (width <=768px) {
     html {
-        font-size: 37.5%;
+        font-size: 43.5%;
     }
 
     .navbar {
@@ -877,6 +967,7 @@ nav ul li:hover::after {
     .grid-two-cols {
         grid-template-columns: 1fr;
         gap: 4rem;
+
     }
 
     .grid-three-cols {
@@ -889,24 +980,25 @@ nav ul li:hover::after {
     }
 
     .helping-section {
-        margin-top: 20rem;
-        & img{
+        margin-top: 21rem;
+
+        & img {
             width: 100%;
         }
     }
 
     .helping-content {
-        top: 38%;
+        top: 32%;
         letter-spacing: 0.4px;
 
-        & h3{
+        & h3 {
             font-size: 2.7rem;
         }
     }
 
     .booking {
-        height: 3.2vh;
-        width: 42rem;
+        height: 2.8vh;
+        width: 40rem;
 
         & img {
             height: 1.1rem;
@@ -915,17 +1007,27 @@ nav ul li:hover::after {
 
         & p {
             font-size: 0.8rem;
-            
+
         }
     }
 
-    .calculator {
-        display: flex;
-
-
-        & img {
-            width: 10rem;
+    .header {
+        & h3 {
+            font-size: 2.5rem;
         }
+    }
+
+    .contact-content {
+        & h4 {
+            font-size: 2.6rem;
+        }
+
+        & p {
+            font-size: 1.7rem;
+        }
+    }
+
+    .calculator-info {
 
         & p {
             font-size: 1.8rem;
@@ -935,21 +1037,25 @@ nav ul li:hover::after {
             font-size: 2rem;
         }
     }
-}
-/* @media (width <=767px){
- .helping-content {
-        top: 38%;
-        letter-spacing: 0.4px;
 
-        & h3{
-            font-size: 2.7rem;
-        }
+    .education-info .graph {
+        width: 70rem;
+
     }
-} */
+
+
+    .education-plan {
+        width: 46%;
+        margin: 0rem 1rem;
+    }
+
+}
+
 @media (width <=576px) {
     html {
-        font-size: 31.25%;
+        font-size: 37.5%;
     }
+
 
     .navbar {
         height: 100%;
@@ -975,14 +1081,24 @@ nav ul li:hover::after {
         margin: auto;
     }
 
-    .education-plan {
+    /* .education-plan {
         width: 90%;
         padding: 3rem 5rem;
+    } */
+    .helping-section {
+        margin-top: 15rem;
+
+
+    }
+
+    .education-plan {
+        width: 100%;
+        margin: 0 0 2rem 0;
     }
 
     .helping-content {
         margin: 4rem 0rem;
-        top: 30%;
+        top: 22%;
     }
 
     .hero-section {
@@ -995,20 +1111,22 @@ nav ul li:hover::after {
 
     .booking {
         width: 36rem;
-        height: 2.7rem;
+        height: 2.6rem;
     }
 
     .booking p {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
-    .calculator {
-        display: flex;
+    .powerful-info p {
+        font-size: 1.6rem;
+    }
 
+    .works p {
+        font-size: 1.6rem;
+    }
 
-        & img {
-            width: 10rem;
-        }
+    .calculator-info {
 
         & p {
             font-size: 2rem;
@@ -1018,22 +1136,111 @@ nav ul li:hover::after {
         & h5 {
             font-size: 2.2rem;
         }
+
+    }
+
+    .education-info {
+        width: 100%;
+
+        & .education-text h4 {
+            font-size: 2.2rem;
+            line-height: 3rem;
+        }
+    }
+
+    /* .graph {
+        width: 300px;
+        height: 19rem;
+    } */
+    .education-info .graph {
+        width: 70rem;
+        height: 240px;
     }
 }
 
-@media (width <=500px){
-.helping-content {
-               top: 21%;
+
+
+@media (width <=508px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .helping-content {
+        top: 11%;
 
     }
-    .helping-content h3{
-font-size: 3rem;
+
+    .helping-content h6 {
+        width: 100%;
+    }
+
+    .helping-content h3 {
+        font-size: 2rem;
+
+    }
+
+    .booking {
+        margin-top: 1.8rem;
+    }
+
+    .powerful-info p {
+        font-size: 1.5rem;
+    }
+
+    .works p {
+        font-size: 1.5rem;
+    }
+
+    .education-info {
+        width: 100%;
+        border-radius: 1.2rem;
+        padding: 6rem;
+
+        & .education-text h4 {
+            font-size: 2rem;
+        }
+
+    }
+
+    .education-info .graph {
+        width: 50rem;
+        height: 240px;
+    }
+
+    .contact-content {
+        & h4 {
+            font-size: 2.2rem;
+        }
+
+        & p {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media (width <=504px) {
+    .helping-content h6 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .helping-content {
+        top: 10%;
+    }
+
+    .btn1,
+    .btn3 {
+        padding: 0.5rem 1.3rem;
+        font-size: 1.2rem;
+        margin-top: 0rem;
     }
 }
 
 @media (width <=476px) {
+
     html {
-        font-size: 25.25%;
+        font-size: 31.25%;
     }
 
     .navbar {
@@ -1045,13 +1252,14 @@ font-size: 3rem;
     }
 
     .helping-content {
-        margin: 4rem 0rem;
-      top: 25%;
+
+        top: 17%;
 
     }
+
     .booking {
         height: 2.1vh;
-        width: 36rem;
+        width: 34rem;
 
         & img {
             height: 1.1rem;
@@ -1065,13 +1273,6 @@ font-size: 3rem;
     }
 
     .calculator {
-        display: flex;
-        align-items: center;
-
-        & img {
-            width: 10rem;
-        }
-
         & p {
             font-size: 2.5rem;
             line-height: 2.7rem;
@@ -1082,39 +1283,102 @@ font-size: 3rem;
             margin-bottom: 1rem;
         }
     }
+
+    .education-info .graph {
+        width: 55rem;
+
+    }
+
+    .contact-content {
+        & h4 {
+            font-size: 2.3rem;
+        }
+
+        & p {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media (width <=404px) {
+    .helping-content h6 {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .education-info .graph {
+        width: 50rem;
+
+    }
+
+    .contact-content {
+        & h4 {
+            font-size: 2rem;
+        }
+
+        & p {
+            font-size: 1rem;
+        }
+    }
 }
 
 @media (width <=397px) {
     .helping-content {
         margin: 4rem 0rem;
-        top: 20%;
+        top: 13%;
+        width: 60%;
 
         & h3 {
-            font-size: 2.8rem;
+            font-size: 2.4rem;
         }
     }
 
-    .contact-content {
-        bottom: 10%;
+    .contact-content p {
+        font-size: 1.2rem;
     }
 
-    .contact-content h3 {
-        font-size: 3rem;
+    .education-info .graph {
+        width: 50rem;
+        height: 220px;
     }
+}
+
+@media (width <=388px) {
+
+    /* .education-info .graph {
+        width: 50rem;
+        height: 250px;
+    } */
+    .helping-content {
+        top:8%;
+    }
+    .booking{
+        margin-top: 1rem;
+    }
+
+    .contact-content {
+        & h4 {
+            font-size: 1.9rem;
+        }
+
+        & p {
+            font-size: 1rem;
+        }
+    }
+
 }
 
 @media (width <=362px) {
     html {
-        font-size: 20.25%;
+        font-size: 25.25%;
     }
 
     .helping-content {
-       
-        top: 28%;
+        top: 13%;
     }
 
     .booking {
-        width: 39rem;
+        width: 35rem;
         height: 1.7vh;
 
         & p {
@@ -1122,4 +1386,58 @@ font-size: 3rem;
             font-weight: 600;
         }
     }
+
+    .education-info .graph {
+        width: 60rem;
+
+        height: 250px;
+
+    }
+
+    .powerful-info {
+        & h6 {
+            font-size: 2.5rem;
+        }
+
+        & p {
+            font-size: 1.8rem;
+        }
+    }
+
+    .works {
+        & img {
+            margin-bottom: 2rem;
+            font-size: 7rem;
+        }
+
+        & h6 {
+            font-size: 2.5rem;
+        }
+
+        & p {
+            font-size: 1.8rem;
+        }
+    }
+
+    .powerful-info svg {
+        margin-bottom: 2rem;
+        font-size: 7rem;
+    }
+
+    .work-info svg {
+        margin-bottom: 2rem;
+        font-size: 7rem;
+    }
+     .contact-content {
+        & h4 {
+            font-size: 2.3rem;
+        }
+
+        & p {
+            font-size: 1.5rem;
+        }
+    }
+    .margin{
+  margin: 8rem 0rem;
+}
 }

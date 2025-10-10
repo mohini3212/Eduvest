@@ -14,29 +14,18 @@ export const Contact = () => {
                             <h4>Still Questions? Talk To An Expert</h4>
                             <p>Our experts are here to help you make the right choice.</p>
 
-                            <button
-                                className="btn1"
-                                onMouseEnter={() => setHover(true)}
-                                onMouseLeave={() => setHover(false)}
-                            >
-                                {hover ? "Button" : "Contact Now"}
-                            </button>
+                            <button className="btn1">Contact Now</button>
+
                         </div>
                     </div>
 
                     <div className="contact-section">
                         <img src="images/contact1.png" alt="contact-img" />
                         <div className="contact-content">
-                            <h3>Still Questions? Talk To An Expert</h3>
+                            <h4>Still Questions? Talk To An Expert</h4>
                             <p>Our experts are here to help you make the right choice.</p>
 
-                            <button
-                                className="btn1"
-                                onMouseEnter={() => setHover(true)}
-                                onMouseLeave={() => setHover(false)}
-                            >
-                                {hover ? "Button" : "Contact Now"}
-                            </button>
+                            <button className="btn1">Contact Now</button>
                         </div>
                     </div>
                 </div>

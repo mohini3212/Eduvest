@@ -157,3 +157,11 @@ ul {
 .btn3:hover {
   transform: scale(1.05);
 }
+
+.btn{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+

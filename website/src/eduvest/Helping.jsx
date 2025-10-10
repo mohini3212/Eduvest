@@ -16,21 +16,10 @@ export const Helping = () => {
                             <img src="images/star-img.svg" alt="star-img" />
                             <p>₹5L insured by RBI's subsidiary DICGC</p>
                         </div>
-                        <div>
-                            <button
-                                className="btn1"
-                                onMouseEnter={() => setHover(true)}
-                                onMouseLeave={() => setHover(false)}
-                            >
-                                {hover ? "Button" : "Get Started"}
-                            </button>
-                            <button
-                                className="btn3"
-                                onMouseEnter={() => setHover(true)}
-                                onMouseLeave={() => setHover(false)}
-                            >
-                                {hover ? "Button" : "Book Workshop"}
-                            </button>
+                        <div className="button">
+                            <button  className="btn1">Get Started</button>
+                            <button  className="btn3">Book Workshop</button>
+                          
                         </div>
 
 

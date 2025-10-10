@@ -33,8 +33,8 @@ export const Powerful = () => {
     return (
         <>
             {/* =================EDUCATION SECTION  ================= */}
-            <section className="margin-top">
-                <div className="container">
+            <section className="margin-top margin">
+                <div className="container ">
                     <div className="header">
                         <h3>Powerful Features for Smart Investing</h3>
                         <p>Our proven 4-step process helps parents create winning investment strategies for their children's financial future.</p>
